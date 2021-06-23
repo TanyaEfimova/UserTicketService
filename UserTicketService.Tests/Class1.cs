@@ -11,4 +11,5 @@ namespace UserTicketService.Tests
             Assert.True(100 == 100);
         }
     }
+
 }
