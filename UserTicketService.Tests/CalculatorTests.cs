@@ -1,5 +1,6 @@
 ﻿using Xunit;
 using NUnit.Framework;
+using System;
 
 namespace UserTicketService.Tests
 {
@@ -28,6 +29,14 @@ namespace UserTicketService.Tests
             var calculator = new Calculator();
 
             NUnit.Framework.Assert.That(calculator.Division(2, 4) == 0);
+        }
+
+        [Test]
+        public void DivisionMustThrowException()
+        {
+            var calculator = new Calculator();
+
+            NUnit.Framework.Assert.Throws<DivideByZeroException>(() => calculator.Division(2, 0));
         }
     }
 }
