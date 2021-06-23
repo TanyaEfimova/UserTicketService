@@ -31,12 +31,12 @@ namespace UserTicketService.Tests
             Xunit.Assert.True(calculator.Division(2, 4) == 0);
         }
 
-        [Test]
+        [Fact]
         public void DivisionMustThrowException()
         {
             var calculator = new Calculator();
 
-            NUnit.Framework.Assert.Throws<DivideByZeroException>(() => calculator.Division(2, 0));
+            Xunit.Assert.Throws<DivideByZeroException>(() => calculator.Division(2, 0));
         }
     }
 }
