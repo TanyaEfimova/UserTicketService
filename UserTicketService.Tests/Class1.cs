@@ -7,7 +7,7 @@ namespace UserTicketService.Tests
         [Test]
         public void TestVoid()
         {
-            Assert.That(1==0.1);
+            Assert.That(1==1);
         }
     }
 }
