@@ -1,15 +1,15 @@
-﻿using NUnit.Framework;
+﻿
+
+using Xunit;
 
 namespace UserTicketService.Tests
 {
-    [TestFixture]
     public class Class1
     {
-        [Test]
-        public void Test1()
+        [Fact]
+        public void TestVoid()
         {
             Assert.True(100 == 100);
         }
     }
-
 }
