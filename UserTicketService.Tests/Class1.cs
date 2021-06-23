@@ -1,6 +1,4 @@
-﻿
-
-using Xunit;
+﻿using Xunit;
 
 namespace UserTicketService.Tests
 {
