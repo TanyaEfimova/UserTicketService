@@ -23,12 +23,12 @@ namespace UserTicketService.Tests
             Xunit.Assert.True(calculator.Subtraction(2, 4) == -2);
         }
 
-        [Test]
+        [Fact]
         public void DivisionMustReturnCorrectValue()
         {
             var calculator = new Calculator();
 
-            NUnit.Framework.Assert.That(calculator.Division(2, 4) == 0);
+            Xunit.Assert.True(calculator.Division(2, 4) == 0);
         }
 
         [Test]
