@@ -1,13 +1,13 @@
-﻿using Xunit;
+﻿using NUnit.Framework;
 
 namespace UserTicketService.Tests
 {
     public class Class1
     {
-        [Fact]
+        [Test]
         public void TestVoid()
         {
-            Assert.True(100 == 100);
+            Assert.That(1==0.1);
         }
     }
 }
