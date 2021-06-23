@@ -15,12 +15,12 @@ namespace UserTicketService.Tests
             Xunit.Assert.Equal(8, calculator.Multiplication(2, 4));
         }
 
-        [Test]
+        [Fact]
         public void SubtractionMustReturnCorrectValue()
         {
             var calculator = new Calculator();
 
-            NUnit.Framework.Assert.That(calculator.Subtraction(2, 4) == -2);
+            Xunit.Assert.True(calculator.Subtraction(2, 4) == -2);
         }
 
         [Test]
