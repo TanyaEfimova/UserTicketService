@@ -38,5 +38,12 @@ namespace UserTicketService.Tests
 
             Xunit.Assert.Throws<DivideByZeroException>(() => calculator.Division(2, 0));
         }
+
+        [Test]
+        public void AddAlwaysReturnsExpectedValue()
+        {
+            var calculatorTest = new Calculator();
+            NUnit.Framework.Assert.That(calculatorTest.Add(10, 220), Is.EqualTo(230));
+        }
     }
 }
