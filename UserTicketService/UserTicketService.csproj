@@ -46,6 +46,7 @@
     <Compile Include="Calculator.cs" />
     <Compile Include="IMailSender.cs" />
     <Compile Include="ITicketService.cs" />
+    <Compile Include="IUserRepository.cs" />
     <Compile Include="MailSender.cs" />
     <Compile Include="Notification.cs" />
     <Compile Include="Program.cs" />
@@ -54,6 +55,8 @@
     <Compile Include="TicketNotFoundException.cs" />
     <Compile Include="TicketPrice.cs" />
     <Compile Include="TicketService.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
